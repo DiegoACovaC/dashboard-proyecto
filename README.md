@@ -12,7 +12,16 @@ Este proyecto es un dashboard administrativo para la gestión de usuarios y esta
 - Media queries para asegurar responsividad en escritorio, tablet y móvil.}
 - Pocas lineas de js para poder hacer un menu de móvil
 
-<img width="3000" height="1875" alt="image" src="https://github.com/user-attachments/assets/b23bee3c-2a18-41b7-8dfe-ada30e902fdb" />
+## Capturas PC, tablet y celular
+<img width="1919" height="949" alt="image" src="https://github.com/user-attachments/assets/ffa53f06-794e-412b-b6c0-5d71a0172134" />
+
+<img width="1342" height="780" alt="image" src="https://github.com/user-attachments/assets/984f7712-ea2d-49be-9d71-f4118cffa260" />
+
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/7144a49d-afad-46c0-a92e-c47443be4678" />
+
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/d8542c9b-165e-4ace-9cb6-60985a893e9d" />
+
+
 
 
 ## Decisiones de diseño y accesibilidad
