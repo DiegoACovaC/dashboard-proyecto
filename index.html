@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Administrativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar" role="navigation">
+      <div class="logo">
+        <img src="assets/fcb.png" alt="Logo del sistema">
+        <h2>AdminSys</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><img src="assets/users.jpg" alt="" aria-hidden="true"> Usuarios</li>
+          <li><img src="assets/stats.jpg" alt="" aria-hidden="true"> Estadísticas</li>
+          <li><img src="assets/settings.png" alt="" aria-hidden="true"> Configuración</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="header" role="banner">
+      <span class="menu-toggle" aria-label="Abrir menú" tabindex="0">☰</span>
+      <h1>Panel Administrativo</h1>
+      <div class="user-info">
+        <span>Admin</span>
+        <img src="https://via.placeholder.com/40" alt="Foto de perfil del administrador">
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section class="cards">
+        <article class="card">
+          <h3>Usuarios activos</h3>
+          <p>1,245</p>
+        </article>
+        <article class="card">
+          <h3>Nuevos registros</h3>
+          <p>320</p>
+        </article>
+        <article class="card">
+          <h3>Soporte pendiente</h3>
+          <p>18</p>
+        </article>
+      </section>
+
+      <section class="table-section">
+        <h2>Lista de usuarios</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Rol</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diego Cova</td>
+              <td>diego@example.com</td>
+              <td>Admin</td>
+              <td>Activo</td>
+            </tr>
+            <tr>
+              <td>Ana Pérez</td>
+              <td>ana@example.com</td>
+              <td>Usuario</td>
+              <td>Inactivo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p>© 2025 AdminSys - Todos los derechos reservados</p>
+    </footer>
+  </div>
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    const menuBtn = document.querySelector('.menu-toggle');
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      sidebar.classList.toggle('sidebar-visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (
+        sidebar.classList.contains('sidebar-visible') &&
+        !sidebar.contains(e.target) &&
+        !menuBtn.contains(e.target)
+      ) {
+        sidebar.classList.remove('sidebar-visible');
+      }
+    });
+  </script>
+</body>
+</html>
